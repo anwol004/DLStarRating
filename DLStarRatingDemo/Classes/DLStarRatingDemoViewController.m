@@ -33,7 +33,7 @@
     
     // Custom Images 
     DLStarRatingControl *customStarImageControl = [[DLStarRatingControl alloc] initWithFrame:CGRectMake(0.0, 307.0, 320.0, 153.0)];
-    
+    customStarImageControl.delegate = self;
     // Set Custom Stars
     [customStarImageControl setStar:nil highlightedStar:[UIImage imageNamed:@"star_highlighted-darker.png"] atIndex:0];
     [customStarImageControl setStar:nil highlightedStar:[UIImage imageNamed:@"star_highlighted-darker.png"] atIndex:2];

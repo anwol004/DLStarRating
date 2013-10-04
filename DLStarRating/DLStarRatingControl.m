@@ -143,7 +143,8 @@
 			[self enableStarsUpTo:idx];
 		}		
 		currentIdx = idx;
-	} 
+	}
+    [self.delegate newRating:self :self.rating];
 	return YES;		
 }
 
@@ -174,6 +175,7 @@
 		currentIdx = -1;
 		[self disableStarsDownToExclusive:0];
 	}
+    [self.delegate newRating:self :self.rating];
 	return YES;
 }
 
